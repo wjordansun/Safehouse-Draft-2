@@ -2,19 +2,26 @@
 <html>
 <head>
     <meta charset="UTF-8">
-	<title>Make Payment</title>
+	<title>Login page</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="background">
     <div class="banner">
-        <h1>Website Name</h1>
+        <h1>Welcome!</h1>
     </div>
     <div>
         <form action="/login" method="POST">
-            <input placeholder="Username" name="username">
-		        <input placeholder="Password" name="password">
-            <button type="submit" id="submit-button">Submit</button>
+            <div class="Username">
+              <label for="username"><b>Username</b></label>
+              <input type="text" placeholder="Username" name="username">
+            <label for="password"><b>Password</b></label>
+		        <input type="text" placeholder="Password" name="password">
+            <button type="submit" id="submit-button">Login</button>
+             <label>
+              <input type="checkbox" checked="checked" name="remember">Remember me
+             </label>
+            </div>
         </form>
         
 
